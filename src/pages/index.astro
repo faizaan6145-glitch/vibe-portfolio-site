@@ -22,11 +22,23 @@ import NewsletterForm from "../components/NewsletterForm.astro";
   </section>
 
   <section class="mt-16 space-y-6">
-    <h2 class="text-4xl font-bold">Placeholder Intro Section</h2>
-    <p class="max-w-3xl text-lg">
-      Placeholder copy for a short introduction. Replace with real details about Faizaan's background,
-      focus, and current direction.
-    </p>
+    <h2 class="text-4xl font-bold">Intro</h2>
+    <div class="flex flex-col gap-6 sm:flex-row sm:items-start sm:justify-between">
+      <div class="space-y-4 sm:flex-1">
+        <p class="max-w-3xl text-lg">
+          faizaan knows swimming too! Placeholder copy for a short introduction. Replace with real
+          details about Faizaan's background, focus, and current direction.
+        </p>
+      </div>
+      <div class="sm:w-1/3">
+        <img
+          src="./20240724_111026.jpg"
+          alt="Faizaan swimming"
+          class="w-full rounded-lg border-2 border-black object-cover"
+          loading="lazy"
+        />
+      </div>
+    </div>
     <a
       href="/projects"
       class="inline-block border-2 border-black px-6 py-3 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-black hover:text-white"
