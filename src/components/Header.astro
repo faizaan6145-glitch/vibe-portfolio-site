@@ -1,0 +1,45 @@
+---
+interface Props {
+  currentPath: string;
+}
+
+const { currentPath } = Astro.props;
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About" },
+  { href: "/projects", label: "Projects" }
+];
+---
+
+<header class="border-b border-black py-6">
+  <div class="flex flex-col gap-4 sm:flex-row sm:items-center sm:justify-between">
+    <a href="/" class="text-3xl font-bold tracking-wide">Faizaan</a>
+    <nav aria-label="Main navigation">
+      <ul class="flex items-center gap-2 sm:gap-4">
+        {
+          navLinks.map((link) => {
+            const isActive = currentPath === link.href;
+
+            return (
+              <li>
+                <a
+                  href={link.href}
+                  aria-current={isActive ? "page" : undefined}
+                  class:list={[
+                    "rounded px-3 py-1.5 text-sm uppercase tracking-wide transition-colors",
+                    isActive
+                      ? "border-2 border-[#E10600] text-[#E10600]"
+                      : "border border-black hover:bg-black hover:text-white"
+                  ]}
+                >
+                  {link.label}
+                </a>
+              </li>
+            );
+          })
+        }
+      </ul>
+    </nav>
+  </div>
+</header>

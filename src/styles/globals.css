@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --accent-red: #e10600;
+}
+
+html,
+body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+body {
+  font-family: "Switzer", sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Khand", sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 0.03em;
+}
+
+a:focus-visible,
+button:focus-visible,
+input:focus-visible {
+  outline: 2px solid var(--accent-red);
+  outline-offset: 3px;
+}

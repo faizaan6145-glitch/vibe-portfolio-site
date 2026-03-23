@@ -1,0 +1,32 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+---
+
+<BaseLayout
+  title="Faizaan | About"
+  description="Placeholder about page describing Faizaan's story and background."
+  currentPath={Astro.url.pathname}
+>
+  <section class="space-y-6">
+    <h1 class="text-5xl font-bold sm:text-6xl">About Faizaan</h1>
+    <p class="max-w-3xl text-lg">
+      Placeholder content: Faizaan's origin story, formative experiences, and key milestones go here.
+      Replace this block with real narrative details.
+    </p>
+    <p class="max-w-3xl text-lg">
+      Placeholder content: describe Faizaan's expertise, values, and approach to building projects and
+      helping people.
+    </p>
+    <p class="max-w-3xl text-lg">
+      Placeholder content: include selected accomplishments, interests, and what Faizaan is focused on now.
+    </p>
+  </section>
+
+  <section class="mt-16">
+    <NewsletterForm
+      title="Stay Updated Every Week"
+      description="Placeholder copy: subscribe for Faizaan's weekly newsletter updates."
+    />
+  </section>
+</BaseLayout>

@@ -1,0 +1,37 @@
+---
+import BaseLayout from "../layouts/BaseLayout.astro";
+import NewsletterForm from "../components/NewsletterForm.astro";
+---
+
+<BaseLayout
+  title="Faizaan | Home"
+  description="Placeholder portfolio homepage for Faizaan with newsletter signup CTA."
+  currentPath={Astro.url.pathname}
+>
+  <section class="space-y-8">
+    <p class="text-sm uppercase tracking-widest text-[#E10600]">Placeholder Hero Label</p>
+    <h1 class="max-w-3xl text-5xl font-bold leading-tight sm:text-6xl">
+      Placeholder heading introducing Faizaan in a bold and memorable way.
+    </h1>
+    <p class="max-w-2xl text-lg">
+      Placeholder tagline: a concise line about Faizaan's work, values, and mission.
+    </p>
+    <div class="pt-2">
+      <NewsletterForm />
+    </div>
+  </section>
+
+  <section class="mt-16 space-y-6">
+    <h2 class="text-4xl font-bold">Placeholder Intro Section</h2>
+    <p class="max-w-3xl text-lg">
+      Placeholder copy for a short introduction. Replace with real details about Faizaan's background,
+      focus, and current direction.
+    </p>
+    <a
+      href="/projects"
+      class="inline-block border-2 border-black px-6 py-3 text-sm font-bold uppercase tracking-wide transition-colors hover:bg-black hover:text-white"
+    >
+      View Projects
+    </a>
+  </section>
+</BaseLayout>
